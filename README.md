@@ -1,1 +1,1 @@
-# packages-sets for psel
+# package-sets for psel
