@@ -4,12 +4,14 @@
 module Main where
 
 import Options.Generic (ParseRecord (parseRecord), getRecord, lispCaseModifiers, parseRecordWithModifiers)
+import PackageSetTool.CommandCopy qualified as CommandCopy
 import PackageSetTool.CommandListReverseDependencies qualified as CommandListReverseDependencies
 import RIO
 
 data Command
     = ListReverseDependencies Text Text
     | ListDependencies Text Text
+    | Copy Text Text [Text]
     deriving (Generic, Show)
 
 instance ParseRecord Command where
@@ -24,3 +26,5 @@ main = do
                 CommandListReverseDependencies.run packageDhall packageName
             ListDependencies packageDhall packageName ->
                 pure ()
+            Copy fromPackageDhall toPackageDhall packageNames ->
+                CommandCopy.run fromPackageDhall toPackageDhall packageNames

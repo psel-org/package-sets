@@ -9,8 +9,10 @@ module PackageSetTool.PackageSet (
     decoder,
     buildExpr,
     prettyPrint,
+    sortOnName,
 ) where
 
+import Data.List (sortBy, sortOn)
 import Dhall.Core qualified as DC
 import Dhall.Map qualified as DM
 import Dhall.Marshal.Decode qualified as D
@@ -67,7 +69,7 @@ buildExpr =
                 ]
 
     dependenciesExpr [] =
-        DC.ListLit (Just DC.Text) mempty
+        DC.ListLit (Just (DC.App DC.List DC.Text)) mempty
     dependenciesExpr xs =
         DC.ListLit Nothing $ Seq.fromList $ map textExpr xs
 
@@ -79,3 +81,6 @@ prettyPrint =
         . DP.layout
         . DP.prettyExpr
         . buildExpr
+
+sortOnName :: [Package] -> [Package]
+sortOnName = sortOn (\Package{name} -> name)

@@ -9,6 +9,7 @@ module PackageSetTool.Package where
 import Data.Graph (Graph, Vertex, graphFromEdges)
 import Dhall qualified
 import RIO
+import RIO.Map qualified as Map
 import RIO.Text (isPrefixOf)
 
 data Package = Package
@@ -37,3 +38,6 @@ mkPackageGraph ::
 mkPackageGraph = graphFromEdges . map toNode
   where
     toNode package@Package{name, dependencies} = (package, name, dependencies)
+
+mkPackageMap :: [Package] -> Map Text Package
+mkPackageMap = Map.fromList . map (\pkg@Package{name} -> (name, pkg))
