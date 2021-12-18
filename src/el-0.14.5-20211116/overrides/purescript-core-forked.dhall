@@ -1,4 +1,9 @@
-{ control =
+{ console =
+  { dependencies = [ "effect", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-console.git"
+  , version = "v5.0.0-el1"
+  }
+, control =
   { dependencies = [ "newtype", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-control.git"
   , version = "v5.0.0-el1"
