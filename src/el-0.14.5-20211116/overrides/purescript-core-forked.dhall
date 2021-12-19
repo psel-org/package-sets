@@ -11,7 +11,7 @@
 , control =
   { dependencies = [ "newtype", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-control.git"
-  , version = "v5.0.0-el1"
+  , version = "v5.0.0-el2"
   }
 , effect =
   { dependencies = [ "prelude" ]
