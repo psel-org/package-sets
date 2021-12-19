@@ -18,6 +18,11 @@
   , repo = "https://github.com/psel-org/purescript-effect.git"
   , version = "v3.0.0-el1"
   }
+, integers =
+  { dependencies = [ "math", "maybe", "numbers", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-integers.git"
+  , version = "v5.0.0-el1"
+  }
 , prelude =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-prelude.git"
