@@ -38,6 +38,11 @@
   , repo = "https://github.com/psel-org/purescript-numbers.git"
   , version = "v8.0.0-el1"
   }
+, partial =
+  { dependencies = [] : List Text
+  , repo = "https://github.com/psel-org/purescript-partial.git"
+  , version = "v3.0.0-el1"
+  }
 , prelude =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-prelude.git"
