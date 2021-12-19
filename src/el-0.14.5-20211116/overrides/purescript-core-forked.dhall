@@ -33,6 +33,11 @@
   , repo = "https://github.com/psel-org/purescript-math.git"
   , version = "v3.0.0-el1"
   }
+, numbers =
+  { dependencies = [ "functions", "math", "maybe" ]
+  , repo = "https://github.com/psel-org/purescript-numbers.git"
+  , version = "v8.0.0-el1"
+  }
 , prelude =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-prelude.git"
