@@ -31,7 +31,7 @@
 , math =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-math.git"
-  , version = "v3.0.0-el2"
+  , version = "v3.0.0-el3"
   }
 , numbers =
   { dependencies = [ "functions", "math", "maybe" ]
