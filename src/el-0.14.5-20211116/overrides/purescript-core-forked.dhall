@@ -28,6 +28,11 @@
   , repo = "https://github.com/psel-org/purescript-integers.git"
   , version = "v5.0.0-el1"
   }
+, math =
+  { dependencies = [] : List Text
+  , repo = "https://github.com/psel-org/purescript-math.git"
+  , version = "v3.0.0-el1"
+  }
 , prelude =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-prelude.git"
