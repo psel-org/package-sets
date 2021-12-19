@@ -1,4 +1,9 @@
-{ console =
+{ `assert` =
+  { dependencies = [ "console", "effect", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-assert.git"
+  , version = "v5.0.0-el1"
+  }
+, console =
   { dependencies = [ "effect", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-console.git"
   , version = "v5.0.0-el1"
