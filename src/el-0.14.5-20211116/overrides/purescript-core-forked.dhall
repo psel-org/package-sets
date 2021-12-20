@@ -26,7 +26,7 @@
 , integers =
   { dependencies = [ "math", "maybe", "numbers", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-integers.git"
-  , version = "v5.0.0-el1"
+  , version = "v5.0.0-el2"
   }
 , math =
   { dependencies = [] : List Text
