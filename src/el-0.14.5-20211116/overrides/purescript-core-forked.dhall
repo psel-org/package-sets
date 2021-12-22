@@ -18,6 +18,23 @@
   , repo = "https://github.com/psel-org/purescript-effect.git"
   , version = "v3.0.0-el1"
   }
+, foldable-traversable =
+  { dependencies =
+    [ "bifunctors"
+    , "const"
+    , "control"
+    , "either"
+    , "functors"
+    , "identity"
+    , "maybe"
+    , "newtype"
+    , "orders"
+    , "prelude"
+    , "tuples"
+    ]
+  , repo = "https://github.com/psel-org/purescript-foldable-traversable.git"
+  , version = "v5.0.1-el1"
+  }
 , functions =
   { dependencies = [ "prelude" ]
   , repo = "https://github.com/psel-org/purescript-functions.git"
