@@ -70,6 +70,12 @@
   , repo = "https://github.com/psel-org/purescript-refs.git"
   , version = "v5.0.0-el1"
   }
+, unfoldable =
+  { dependencies =
+    [ "foldable-traversable", "maybe", "partial", "prelude", "tuples" ]
+  , repo = "https://github.com/psel-org/purescript-unfoldable.git"
+  , version = "v5.0.0-el1"
+  }
 , unsafe-coerce =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-unsafe-coerce.git"
