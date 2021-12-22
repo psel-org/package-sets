@@ -65,6 +65,11 @@
   , repo = "https://github.com/psel-org/purescript-prelude.git"
   , version = "v5.0.1-el2"
   }
+, refs =
+  { dependencies = [ "effect", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-refs.git"
+  , version = "v5.0.0-el1"
+  }
 , unsafe-coerce =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-unsafe-coerce.git"
