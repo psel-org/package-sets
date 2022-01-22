@@ -18,6 +18,22 @@
   , repo = "https://github.com/psel-org/purescript-effect.git"
   , version = "v3.0.0-el1"
   }
+, enums =
+  { dependencies =
+    [ "control"
+    , "either"
+    , "gen"
+    , "maybe"
+    , "newtype"
+    , "nonempty"
+    , "partial"
+    , "prelude"
+    , "tuples"
+    , "unfoldable"
+    ]
+  , repo = "https://github.com/psel-org/purescript-enums.git"
+  , version = "v5.0.0-el1"
+  }
 , foldable-traversable =
   { dependencies =
     [ "bifunctors"
