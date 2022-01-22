@@ -86,6 +86,11 @@
   , repo = "https://github.com/psel-org/purescript-refs.git"
   , version = "v5.0.0-el1"
   }
+, st =
+  { dependencies = [ "partial", "prelude", "tailrec", "unsafe-coerce" ]
+  , repo = "https://github.com/psel-org/purescript-st.git"
+  , version = "v5.0.1-el1"
+  }
 , unfoldable =
   { dependencies =
     [ "foldable-traversable", "maybe", "partial", "prelude", "tuples" ]
