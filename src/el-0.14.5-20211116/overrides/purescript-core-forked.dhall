@@ -66,6 +66,11 @@
   , repo = "https://github.com/psel-org/purescript-integers.git"
   , version = "v5.0.0-el2"
   }
+, lazy =
+  { dependencies = [ "control", "foldable-traversable", "invariant", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-lazy.git"
+  , version = "v5.0.0-el1"
+  }
 , math =
   { dependencies = [] : List Text
   , repo = "https://github.com/psel-org/purescript-math.git"
