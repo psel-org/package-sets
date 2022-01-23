@@ -34,6 +34,11 @@
   , repo = "https://github.com/psel-org/purescript-enums.git"
   , version = "v5.0.0-el1"
   }
+, exceptions =
+  { dependencies = [ "effect", "either", "maybe", "prelude" ]
+  , repo = "https://github.com/psel-org/purescript-exceptions.git"
+  , version = "v5.0.0-el1"
+  }
 , foldable-traversable =
   { dependencies =
     [ "bifunctors"
