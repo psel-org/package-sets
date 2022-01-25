@@ -99,7 +99,7 @@
 , st =
   { dependencies = [ "partial", "prelude", "tailrec", "unsafe-coerce" ]
   , repo = "https://github.com/psel-org/purescript-st.git"
-  , version = "v5.0.1-el2"
+  , version = "v5.0.1-el3"
   }
 , unfoldable =
   { dependencies =
