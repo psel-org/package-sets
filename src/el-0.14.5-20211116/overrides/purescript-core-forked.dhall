@@ -1,4 +1,22 @@
-{ `assert` =
+{ arrays =
+  { dependencies =
+    [ "bifunctors"
+    , "control"
+    , "foldable-traversable"
+    , "maybe"
+    , "nonempty"
+    , "partial"
+    , "prelude"
+    , "st"
+    , "tailrec"
+    , "tuples"
+    , "unfoldable"
+    , "unsafe-coerce"
+    ]
+  , repo = "https://github.com/psel-org/purescript-arrays.git"
+  , version = "v6.0.1-el1"
+  }
+, `assert` =
   { dependencies = [ "console", "effect", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-assert.git"
   , version = "v5.0.0-el1"
