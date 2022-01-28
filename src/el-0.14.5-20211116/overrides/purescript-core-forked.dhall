@@ -87,7 +87,7 @@
 , lazy =
   { dependencies = [ "control", "foldable-traversable", "invariant", "prelude" ]
   , repo = "https://github.com/psel-org/purescript-lazy.git"
-  , version = "v5.0.0-el1"
+  , version = "v5.0.0-el2"
   }
 , math =
   { dependencies = [] : List Text
